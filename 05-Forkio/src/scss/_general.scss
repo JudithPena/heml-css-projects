@@ -1,0 +1,38 @@
+.wrapper {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto; //// Не трогать! Ломается верстка!
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+
+@media (min-width: 481px) {
+.container {
+  min-width: 481px;
+  max-width: 992px;
+}
+}
+
+@media (max-width: 992px) and(min-width:481px) {
+  .container {
+    min-width: 481px;
+  }
+
+}
+
+@media (min-width: 993px) {
+  .container {
+    min-width: 993px;
+    max-width: 1200px;
+  }
+}

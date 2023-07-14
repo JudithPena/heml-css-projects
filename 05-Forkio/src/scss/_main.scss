@@ -1,0 +1,69 @@
+.main {
+  background-image: url(img/fork-img.jpg);
+  width: 100%;
+  position: relative;
+  @include flex-center;
+  flex-direction: column;
+  background-position: center center;
+  &__title {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    color: white;
+    margin-top: 50px;
+    text-align: center;
+  }
+  &__subtitle {
+    color: $purple-color;
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  &__versions {
+    color: #848e97;
+    font-size: 14px;
+    line-height: 14px;
+    margin-top: 14px;
+    margin-bottom: 416px;
+    text-align: center;
+  }
+  &__button {
+    font-size: 18px;
+    line-height: 20px;
+    color: white;
+    background-color: $purple-color;
+    border-radius: 40px;
+    padding: 13px 29px;
+    position: absolute;
+    top: 590px;
+    left: 50%;
+    margin-left: -140px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  &__button:hover {
+    color: $purple-color;
+    background-color: white;
+    border: 2px solid $purple-color;
+    transition: 0.1s ease 0s;
+  }
+  &__trial {
+    color: $grey-color;
+    margin-top: 35px;
+    position: absolute;
+    top: 647px;
+    left: 50%;
+    margin-left: -111px;
+  }
+}
+
+@media (min-width: 481px) {
+.main__button {
+  padding: 23px 61px;
+  font-size: 21px;
+  line-height: 23px;
+  margin-left: -190px;
+  top: 575px;
+}
+}

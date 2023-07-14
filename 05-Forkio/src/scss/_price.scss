@@ -1,0 +1,171 @@
+.price {
+  background: url(./img/base.jpg);
+  font-family: "Montserrat", sans-serif;
+  background-size: cover;
+  @media (min-width: 481px) {
+    background: url(./img/Layer480.png);
+    background-size: cover;
+  }
+  &__title {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 42px;
+    color: white;
+    text-align: center;
+    margin-top: -13px;
+  }
+  &__blocks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    flex-wrap: nowrap;
+    padding-bottom: 94px;
+  }
+  &__item {
+    width: 257px;
+    margin-top: 32px;
+  }
+  &__item:nth-child(3) {
+    width: 299px;
+  }
+  &__item:first-child {
+    margin-top: 18px;
+  }
+  &__item-header {
+    background-color: rgba(255, 255, 255, 0.06);
+  }
+
+  &__item-title {
+    font-size: 24px;
+    line-height: 24px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 36px 0;
+  }
+  &__item-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.11);
+    padding: 0 20px;
+  }
+  &__item:nth-child(3) &__item-main {
+    background-color: rgba(70, 48, 72, 0.84);
+  }
+  &__item:nth-child(3) &__item-header {
+    background-color: rgba(0, 0, 0, 0.11);
+    mix-blend-mode: normal;
+  }
+  &__item-cost {
+    font-size: 60px;
+    line-height: 62px;
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+  }
+  &__item-cost + p {
+    font-size: 14px;
+    line-height: 16px;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    text-transform: uppercase;
+  }
+  &__item-line {
+    width: 60px;
+    height: 5px;
+    background: #8d81ac;
+    align-self: center;
+    margin-top: 38px;
+  }
+  &__item-line + p {
+    font-size: 16px;
+    line-height: 18px;
+    color: white;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  &__item-link {
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: white;
+    padding: 13.5px 36px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 40px;
+    text-decoration: none;
+    margin-top: 37px;
+    margin-bottom: 67px;
+  }
+  &__item:nth-child(1) &__item-link {
+    margin-top: 55px;
+  }
+}
+.price__item:nth-child(3) .price__item-link {
+  margin-bottom: 47px;
+  margin-top: 83px;
+}
+.price__item:nth-child(3) .price__item-cost {
+  font-size: 82px;
+  line-height: 90px;
+}
+.price__item:nth-child(3) .price__item-title {
+  padding: 43px 96px;
+}
+.price__item:nth-child(3) .price__item-line {
+  margin-top: 46px;
+}
+.price__item:nth-child(3) .price__item-line + p {
+  margin-top: 40px;
+}
+
+
+@media (min-width: 535px) {
+  .price__blocks {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    justify-items: end;
+    gap: 30px 25px;
+    max-width: min-content;
+    margin: 0 auto;
+  }
+
+  .price__title {
+    font-size: 42px;
+    line-height: 44px;  
+    padding-top: 75px;
+    padding-bottom: 13px;
+  }
+  .main__button {
+    top: 555px !important;
+  }
+}
+
+@media (min-width: 993px) {
+  .price__blocks {
+    display: flex;
+    flex-direction: row;
+    max-width: 1145px;
+  }
+
+  .price__title {
+    font-size: 48px;
+    line-height: 50px;
+    padding-top: 112px;
+  }
+
+  .price__item {
+    margin-top: 112px;
+  }
+  .price__item:first-child {
+    margin-top: 112px;
+  }
+  .price__item-link {
+    margin-bottom: 37px;
+  }
+}

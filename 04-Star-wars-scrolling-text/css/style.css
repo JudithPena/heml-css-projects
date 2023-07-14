@@ -1,0 +1,54 @@
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto", arial, sans-serif;
+  font-weight: 700;
+  color: gold;
+  background-color: black;
+  overflow: hidden;
+  text-transform: uppercase;
+  word-spacing: 3px;
+  line-height: 2;
+}
+.title {
+  position: absolute;
+  width: 25em;
+  height: 50em;
+  bottom: 0;
+  left: 50%;
+  margin-left: -12em;
+  font-size: 350%;
+  text-align: justify;
+  overflow: hidden;
+  transform-origin: 50% 100%;
+  transform: perspective(800px) rotateX(27deg);
+}
+.subtitles {
+  position: absolute;
+  top: 100%;
+  animation-name: subtitle;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  text-align: center;
+}
+@keyframes subtitle {
+  0% {
+    top: 100%;
+  }
+  20% {
+    top: 70%;
+  }
+  40% {
+    top: 40%;
+  }
+  60% {
+    top: 10%;
+  }
+  80% {
+    top: -20%;
+  }
+  100% {
+    top: -100%;
+  }
+}

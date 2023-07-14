@@ -1,0 +1,212 @@
+.fork {
+  background-image: url(img/fork-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-sizing: border-box;
+
+  &__container {
+    @include flex-center;
+    flex-direction: column;
+
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 0 10px 0;
+  }
+
+  &__title {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    color: #ffffff;
+    margin-top: 57px;
+    margin-bottom: 53px;
+  }
+
+  &__brends {
+    margin-bottom: 45px;
+  }
+
+  &__brend-item {
+    @include flex-center;
+    flex-direction: column;
+    margin-bottom: 45px;
+  }
+
+  &__brend-img {
+    @include flex-center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 225px;
+    min-height: 64px;
+  }
+
+  &__brend-content {
+    font-family: "Lato", sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 27px;
+  }
+
+  &__footer {
+    @include flex-center;
+    flex-direction: column;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__footer-text {
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #a291a5;
+    width: 92%;
+  }
+
+  &__footer-line {
+    min-width: 245px;
+    max-width: 780px;
+    height: 2px;
+    background: #645766;
+    margin-top: 22px;
+    margin-bottom: 14px;
+    width: 75%;
+  }
+}
+
+@media (min-width: 481px) {
+  .fork__title {
+    font-size: 42px;
+    line-height: 44px;
+    margin-top: 86px;
+  }
+
+  .fork__brends {
+    min-width: 481px;
+    max-width: 992px;
+
+    display: grid;
+    grid-gap: 0 0;
+    grid-template-rows: repeat(1fr 1fr);
+
+    grid-template-areas:
+      "brenditem1 brenditem2"
+      "brenditem3 brenditem4"
+      "brenditem5 brenditem6";
+  }
+
+  .brend-item1 {
+    grid-area: brenditem1;
+  }
+  .brend-item2 {
+    grid-area: brenditem2;
+  }
+  .brend-item3 {
+    grid-area: brenditem3;
+  }
+  .brend-item4 {
+    grid-area: brenditem4;
+  }
+  .brend-item5 {
+    grid-area: brenditem5;
+  }
+  .brend-item6 {
+    grid-area: brenditem6;
+  }
+}
+
+@media (max-width: 992px) and(min-width:481px) {
+    .fork__title {
+      font-size: 42px;
+      line-height: 44px;
+      margin-top: 86px;
+    }
+  
+    .fork__brends {
+      min-width: 481px;
+      max-width: 992px;
+  
+      display: grid;
+      grid-gap: 0 0;
+      grid-template-rows: repeat(1fr 1fr);
+  
+      grid-template-areas:
+        "brenditem1 brenditem2"
+        "brenditem3 brenditem4"
+        "brenditem5 brenditem6";
+    }
+  
+    .brend-item1 {
+      grid-area: brenditem1;
+    }
+    .brend-item2 {
+      grid-area: brenditem2;
+    }
+    .brend-item3 {
+      grid-area: brenditem3;
+    }
+    .brend-item4 {
+      grid-area: brenditem4;
+    }
+    .brend-item5 {
+      grid-area: brenditem5;
+    }
+    .brend-item6 {
+      grid-area: brenditem6;
+    }
+  }
+
+  @media (min-width: 993px) {
+      .fork__title {
+        font-size: 48px;
+        line-height: 50px;
+        margin-top: 108px;
+      }
+    
+      .fork__brends {
+        min-width: 993px;
+        max-width: 1200px;
+    
+        display: grid;
+        grid-gap: 5px 5px;
+        grid-template-rows: repeat(1fr 1fr 1fr);
+    
+        grid-template-areas:
+          "brenditem1 brenditem2 brenditem3"
+          "brenditem4 brenditem5 brenditem6";
+      }
+    
+      .brend-item1 {
+        grid-area: brenditem1;
+      }
+      .brend-item2 {
+        grid-area: brenditem2;
+      }
+      .brend-item3 {
+        grid-area: brenditem3;
+      }
+      .brend-item4 {
+        grid-area: brenditem4;
+      }
+      .brend-item5 {
+        grid-area: brenditem5;
+      }
+      .brend-item6 {
+        grid-area: brenditem6;
+      }
+  }
